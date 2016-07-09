@@ -38,7 +38,7 @@ import android.util.Log;
 public class CrashHandler implements UncaughtExceptionHandler {
 
 	public static final String TAG = "CrashHandler";
-	public static final String URL_UPLOAD_RUNNINGLOG = "http://mobile.10086call.cn:8899/testupload";
+	public static final String URL_UPLOAD_RUNNINGLOG = "http://mobile.k7.hk:8899/testupload";
 	public String path = FileManager.getFileDir() + "/" + Constants.BrandName
 			+ "/crash";
 	public static File zipFileName;

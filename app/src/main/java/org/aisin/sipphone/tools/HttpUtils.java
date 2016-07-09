@@ -16,48 +16,48 @@ import org.apache.http.util.EntityUtils;
 import android.content.Context;
 
 public class HttpUtils {
-	public static final String URL = "http://mobile.10086call.cn:8899/";
-	public static final String PAY = "http://pay.10086call.cn/recharge/service/pay.php";
-	public static final String LS = "http://user.10086call.cn/usercenter/mobile_chargelog.php";
-	public static final String HD = "http://user.10086call.cn/usercenter/mobile_callsearch.php";
-	public static final String MSG_URL = "http://msg.10086call.cn:8899/config/msglist";
-	public static final String ACTIONREPORT = "http://mobile.10086call.cn:8899/action_report";
-	public static final String CALL = "http://mobile.10086call.cn:8899/call";
-	public static final String UPUSERDATAURL = "http://mobile.10086call.cn:8899/user/uploadUserProfile";
-	public static final String UPUserHeadURL = "http://mobile.10086call.cn:8899/user/uploadUserHead";
+	public static final String URL = "http://mobile.k7.hk:8899/";
+	public static final String PAY = "http://pay.k7.hk:8060/recharge/service/pay.php";
+	public static final String LS = "http://user.k7.hk:8060/usercenter/mobile_chargelog.php";
+	public static final String HD = "http://user.k7.hk:8060/usercenter/mobile_callsearch.php";
+	public static final String MSG_URL = "http://msg.k7.hk:8899/config/msglist";
+	public static final String ACTIONREPORT = "http://mobile.k7.hk:8899/action_report";
+	public static final String CALL = "http://mobile.k7.hk:8899/call";
+	public static final String UPUSERDATAURL = "http://mobile.k7.hk:8899/user/uploadUserProfile";
+	public static final String UPUserHeadURL = "http://mobile.k7.hk:8899/user/uploadUserHead";
 
 	// ------------V2地址-------------------
-	public static final String REG_GETCODE = "http://mobile.10086call.cn:8899/v2/reg_sendauthcode_v2";
-	public static final String REG_V2 = "http://mobile.10086call.cn:8899/v2/reg_v2";
-	public static final String Loding_V2 = "http://mobile.10086call.cn:8899/v2/login_v2";
-	public static final String ChangPhone_V2 = "http://mobile.10086call.cn:8899/v2/change_phone_v2";
-	public static final String GetPWD_YZCode_V2 = "http://mobile.10086call.cn:8899/v2/send_findpwd_authcode_v2";
-	public static final String GetPWD_URL_V2 = "http://mobile.10086call.cn:8899/v2/find_password_v2";
-	public static final String ChangePWD_URL_V2 = "http://mobile.10086call.cn:8899/v2/change_pwd_v2";
+	public static final String REG_GETCODE = "http://mobile.k7.hk:8899/v2/reg_sendauthcode_v2";
+	public static final String REG_V2 = "http://mobile.k7.hk:8899/v2/reg_v2";
+	public static final String Loding_V2 = "http://mobile.k7.hk:8899/v2/login_v2";
+	public static final String ChangPhone_V2 = "http://mobile.k7.hk:8899/v2/change_phone_v2";
+	public static final String GetPWD_YZCode_V2 = "http://mobile.k7.hk:8899/v2/send_findpwd_authcode_v2";
+	public static final String GetPWD_URL_V2 = "http://mobile.k7.hk:8899/v2/find_password_v2";
+	public static final String ChangePWD_URL_V2 = "http://mobile.k7.hk:8899/v2/change_pwd_v2";
 
 	private static HttpClient httpclient = null;
 
-	public static final String RED_URL = "http://mobile.10086call.cn:8899/gift/add_gift_record_v2";
-	public static final String RED_Checkout_URL = "http://mobile.10086call.cn:8899/gift/checkout_gift_v2";
-	public static final String RED_GETDATA_URL = "http://mobile.10086call.cn:8899/gift/get_gift_records_v2";
-	public static final String GETUXXDATA_URL = "http://mobile.10086call.cn:8899/user/getUserProfile";// 获取个人资料
-	public static final String STARTPAGER_URL = "http://mobile.10086call.cn:8899/config/start_page";
-	public static final String COMMITFRIEND = "http://mobile.10086call.cn:8899/friend/uploadAixinContact";
-	public static final String GETAixinFriends = "http://mobile.10086call.cn:8899/friend/getAixinFriends";
-	public static final String GETAixinFriendInfo = "http://mobile.10086call.cn:8899/friend/getAixinFriendInfo";
-	public static final String QUERYAixinFriendInfo = "http://mobile.10086call.cn:8899/friend/queryAixinFriendInfo";
-	public static final String add_gift_record_v2 = "http://mobile.10086call.cn:8899/gift/add_gift_record_v2";
-	public static final String get_set_gift_command = "http://mobile.10086call.cn:8899/gift/get_set_gift_command";
-	public static final String get_sended_giftinfo_by_command = "http://mobile.10086call.cn:8899/gift/get_sended_giftinfo_by_command";
-	public static final String add_gift_thankyou = "http://mobile.10086call.cn:8899/gift/add_gift_thankyou";
-	public static final String get_gift_info_v2 = "http://mobile.10086call.cn:8899/gift/get_gift_info_v2";
-	public static final String get_gift_receive_info_v2 = "http://mobile.10086call.cn:8899/gift/get_gift_receive_info_v2";
+	public static final String RED_URL = "http://mobile.k7.hk:8899/gift/add_gift_record_v2";
+	public static final String RED_Checkout_URL = "http://mobile.k7.hk:8899/gift/checkout_gift_v2";
+	public static final String RED_GETDATA_URL = "http://mobile.k7.hk:8899/gift/get_gift_records_v2";
+	public static final String GETUXXDATA_URL = "http://mobile.k7.hk:8899/user/getUserProfile";// 获取个人资料
+	public static final String STARTPAGER_URL = "http://mobile.k7.hk:8899/config/start_page";
+	public static final String COMMITFRIEND = "http://mobile.k7.hk:8899/friend/uploadAixinContact";
+	public static final String GETAixinFriends = "http://mobile.k7.hk:8899/friend/getAixinFriends";
+	public static final String GETAixinFriendInfo = "http://mobile.k7.hk:8899/friend/getAixinFriendInfo";
+	public static final String QUERYAixinFriendInfo = "http://mobile.k7.hk:8899/friend/queryAixinFriendInfo";
+	public static final String add_gift_record_v2 = "http://mobile.k7.hk:8899/gift/add_gift_record_v2";
+	public static final String get_set_gift_command = "http://mobile.k7.hk:8899/gift/get_set_gift_command";
+	public static final String get_sended_giftinfo_by_command = "http://mobile.k7.hk:8899/gift/get_sended_giftinfo_by_command";
+	public static final String add_gift_thankyou = "http://mobile.k7.hk:8899/gift/add_gift_thankyou";
+	public static final String get_gift_info_v2 = "http://mobile.k7.hk:8899/gift/get_gift_info_v2";
+	public static final String get_gift_receive_info_v2 = "http://mobile.k7.hk:8899/gift/get_gift_receive_info_v2";
 
 	// 分享红包图标地址
-	public static final String redsharedImageurl = "http://img.10086call.cn/group1/M00/00/0B/d5OYZ1W2_J2AQ9q2AAAcD7bibuo522.png";
+	public static final String redsharedImageurl = "http://img.k7.hk:8060/group1/M00/00/0B/d5OYZ1W2_J2AQ9q2AAAcD7bibuo522.png";
 	// 爱信图标网络地址
-	public static final String aixinImageurl = "http://m.10086call.cn/download/image/Aisin.512x512.png";
-	public static final String ADVICE = "http://mobile.10086call.cn:8899/config/advice";
+	public static final String aixinImageurl = "http://m.k7.hk:8060/download/image/Aisin.512x512.png";
+	public static final String ADVICE = "http://mobile.k7.hk:8899/config/advice";
 
 	// 发现页面网址
 	public static final String Find_aisin_mall_URL = "http://1000shishang.taobao.com";
@@ -68,7 +68,7 @@ public class HttpUtils {
 	public static final String Find_flight_ticket_URL = "http://touch.qunar.com/h5/flight/";
 	public static final String Find_transfer_machine_URL = "http://car.qunar.com/?from=9&bd_source=aixin";
 	public static final String Find_hotel_URL = "http://touch.qunar.com/h5/hotel/";
-	public static final String servicePage_URL = "http://mobile.10086call.cn:8899/config/get_service_page_config";
+	public static final String servicePage_URL = "http://mobile.k7.hk:8899/config/get_service_page_config";
 
 	public static synchronized String result_url_get(String url,
 			String defaultvalue) {
