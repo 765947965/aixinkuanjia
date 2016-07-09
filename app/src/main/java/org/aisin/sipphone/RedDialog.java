@@ -230,7 +230,7 @@ public class RedDialog extends Activity implements OnClickListener {
 			red_errortext.setText("");
 			// 开启动画
 			try {
-				red_anim_image.setImageResource(R.anim.redcheckoutanim);
+				red_anim_image.setImageResource(R.drawable.redcheckoutanim);
 				animationDrawable = (AnimationDrawable) red_anim_image
 						.getDrawable();
 				animationDrawable.start();

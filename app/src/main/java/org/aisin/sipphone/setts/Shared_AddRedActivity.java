@@ -290,7 +290,7 @@ public class Shared_AddRedActivity extends Activity implements OnClickListener {
 			img_red_anim.setEnabled(false);
 			img_redclose.setEnabled(false);
 			// 开启动画
-			img_red_anim.setImageResource(R.anim.redcheckoutanim);
+			img_red_anim.setImageResource(R.drawable.redcheckoutanim);
 			animationDrawable = (AnimationDrawable) img_red_anim.getDrawable();
 			animationDrawable.start();
 			// 拆红包
