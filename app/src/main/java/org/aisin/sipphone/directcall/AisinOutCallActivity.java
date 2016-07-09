@@ -538,7 +538,7 @@ public class AisinOutCallActivity extends Activity implements OnClickListener {
 	@SuppressLint("NewApi")
 	private void handUp() {
 		// img_hangUp.setBackground(null);
-		img_hangUp.setImageResource(R.id.outcall_hangUp);
+		img_hangUp.setImageResource(R.drawable.hand_up_not);
 		if (audio != null)
 			audio.setMode(AudioManager.MODE_NORMAL);
 		LinphoneCore lc = AisinManager.getLc();
