@@ -143,7 +143,7 @@ public class MyPayActivity extends Activity implements OnClickListener,
 					.setBackgroundResource(R.drawable.maillisttitlebanck_axhy_pres);
 			mHandler.sendEmptyMessage(1);
 		} else if (id == R.id.text_bt) {// 充值
-			// Log.i("爱信", ppcfnoew.getBody());
+			// Log.i("国脉电信", ppcfnoew.getBody());
 			if ("ZFB".equals(RechargeFlag)) {
 				new PayDemoActivity(MyPayActivity.this, ppcfnoew.getSubject(),
 						ppcfnoew.getBody(), ppcfnoew.getPrice() + "").pay();

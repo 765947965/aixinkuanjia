@@ -48,11 +48,11 @@ public class MailList_Fragment extends Fragment implements OnListnerShearch,
 	private View mail_list_fragment;
 	private ImageView mail_list_add;
 	private TextView maillist_txlbt;// 显示通讯录好友
-	private TextView maillist_hybt;// 显示爱信好友
+	private TextView maillist_hybt;// 显示国脉电信好友
 	private int listviewshowflag = 0, TXL = 0, HY = 1;// 当前显示的好友类型
 	private boolean upfriendflag = true;// 是否更新头像 好友资料
-	private boolean actionflag = true;// 通讯录和爱信好友是否可点击
-	private boolean v_NOFlag = true;// 是否切换爱信好友和搜索好友
+	private boolean actionflag = true;// 通讯录和国脉电信好友是否可点击
+	private boolean v_NOFlag = true;// 是否切换国脉电信好友和搜索好友
 	private TextView mail_listactivity_tishi;
 	private SearchText searchtext;
 	private ImageView cleartext;
@@ -140,14 +140,14 @@ public class MailList_Fragment extends Fragment implements OnListnerShearch,
 						mail_listactivity_tishi
 								.setText("联系人为空！或者没有访问联系人的权限！点我查看开启权限方法!");
 					} else if (listviewshowflag == HY) {
-						mail_listactivity_tishi.setText("暂无爱信好友,点击添加按钮添加爱信好友!");
+						mail_listactivity_tishi.setText("暂无国脉电信好友,点击添加按钮添加国脉电信好友!");
 					}
 					mail_listactivity_list.setVisibility(View.INVISIBLE);
 					mail_listactivity_tishi.setVisibility(View.VISIBLE);
 				}
 				String hinttext = "";
 				if (listviewshowflag == HY) {
-					hinttext = "可搜索" + contacts.size() + "个爱信好友";
+					hinttext = "可搜索" + contacts.size() + "个国脉电信好友";
 				} else if (listviewshowflag == TXL) {
 					hinttext = "可搜索" + contacts.size() + "个联系人";
 				}
@@ -363,7 +363,7 @@ public class MailList_Fragment extends Fragment implements OnListnerShearch,
 				intent.setType("vnd.android.cursor.dir/raw_contact");
 				startActivity(intent);
 			} else {
-				// 添加爱信好友
+				// 添加国脉电信好友
 				Intent intent = new Intent(AisinActivity.context,
 						org.aisin.sipphone.mai_list.AddAisinFriend.class);
 				startActivity(intent);
@@ -459,7 +459,7 @@ public class MailList_Fragment extends Fragment implements OnListnerShearch,
 				mHandler.sendEmptyMessage(2);// 头像加载完毕
 			}
 		}
-		// 匹配通讯录爱信好友
+		// 匹配通讯录国脉电信好友
 		// 第一次加载的时候才做匹配
 		if (upfriendflag) {
 			upfriendflag = false;
@@ -477,7 +477,7 @@ public class MailList_Fragment extends Fragment implements OnListnerShearch,
 			AisinBuildDialog mybuild = new AisinBuildDialog(
 					AisinActivity.context);
 			mybuild.setTitle("提示");
-			mybuild.setMessage("是否同步本地通讯录爱信好友?");
+			mybuild.setMessage("是否同步本地通讯录国脉电信好友?");
 			mybuild.setOnDialogCancelListener("取消",
 					new DialogBuildCancelListener() {
 						@Override
@@ -522,7 +522,7 @@ public class MailList_Fragment extends Fragment implements OnListnerShearch,
 	public void upfrendsdwon(boolean upflag) {
 		AisinActivity.context.sendBroadcast(new Intent(Constants.BrandName
 				+ ".insert.callhistory.now"));
-		// 服务器爱信好友匹配完毕
+		// 服务器国脉电信好友匹配完毕
 		if (listviewshowflag == TXL) {
 			if (upflag) {
 				mHandler.sendEmptyMessage(2);// 服务器好友匹配完毕
@@ -536,7 +536,7 @@ public class MailList_Fragment extends Fragment implements OnListnerShearch,
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
-				// 处理爱信好友头像
+				// 处理国脉电信好友头像
 				CursorTools.checkupfriends(AisinActivity.context,
 						MailList_Fragment.this);
 			}

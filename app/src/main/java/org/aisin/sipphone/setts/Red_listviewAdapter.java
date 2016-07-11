@@ -134,7 +134,7 @@ public class Red_listviewAdapter extends BaseAdapter {
 						holder.red_has_open_image
 								.setImageResource(R.drawable.red_huafei);
 					}
-					// 爱信每日登录红包或者金钱红包
+					// 国脉电信每日登录红包或者金钱红包
 					double money_temp = Double.parseDouble(robct.getMoney())
 							/ (double) 100;
 					double returned_money_d = Double.parseDouble(robct
@@ -233,7 +233,7 @@ public class Red_listviewAdapter extends BaseAdapter {
 					if (robct.getFrom() != null
 							&& !"".equals(robct.getFrom().trim())) {
 						if ("system".equals(robct.getFrom().trim())) {
-							holder.red_type_text.setText("红包: 爱信的"
+							holder.red_type_text.setText("红包: 国脉电信的"
 									+ robct.getName());
 						} else {
 							// 匹配通讯录或者UID

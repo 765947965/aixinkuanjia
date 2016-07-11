@@ -91,7 +91,7 @@ public class ShowRedRecevedInfo extends Activity implements OnClickListener {
 						|| redobject.getType().trim().endsWith("_money")
 						|| redobject.getType().trim().endsWith("_right")) {
 					tap = 0;
-					// 爱信每日登录红包或者金钱红包
+					// 国脉电信每日登录红包或者金钱红包
 					double money_temp = Double
 							.parseDouble(redobject.getMoney()) / (double) 100;
 					double received_money_d = Double.parseDouble(redobject

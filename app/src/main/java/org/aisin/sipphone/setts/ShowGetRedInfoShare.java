@@ -38,7 +38,7 @@ public class ShowGetRedInfoShare extends Activity {
 		Intent intent = new Intent(ShowGetRedInfoShare.this,
 				org.aisin.sipphone.setts.SharedActivity.class);
 		intent.putExtra("invite_sns_message", invite_sns_message);
-		intent.putExtra("invite_app", "爱信-红包");
+		intent.putExtra("invite_app", "国脉电信-红包");
 		intent.putExtra("bitmapid", R.drawable.redsharedimage);
 		intent.putExtra("iamgeurl", HttpUtils.redsharedImageurl);
 		intent.putExtra(

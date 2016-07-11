@@ -68,7 +68,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:gravity="center"
-                        android:text="@string/aisinreds"
+                        android:text="给你的红包"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
 

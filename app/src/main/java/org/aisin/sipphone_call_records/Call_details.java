@@ -198,7 +198,7 @@ public class Call_details extends Activity implements OnClickListener {
 		invite_sms_message = shared_SNSshare.getString(
 				SharedPreferencesTools.SPF_msglist_date_INVITE_SMS_MESSAGE, "");
 		userinfo = UserInfo_db.getUserInfo(this);
-		// 开启线程查找是否爱信好友
+		// 开启线程查找是否国脉电信好友
 		try {
 			String ipcall_prefix = SharedPreferencesTools
 					.getSharedPreferences_msglist_date_share(this)
@@ -210,7 +210,7 @@ public class Call_details extends Activity implements OnClickListener {
 			}
 			Pattern p = Pattern.compile("1[3-578][0-9]{9}");
 			final Matcher m = p.matcher(phone);
-			if (m.find()) {// 如果是手机号码 格式化手机号码 再做爱信好友匹配
+			if (m.find()) {// 如果是手机号码 格式化手机号码 再做国脉电信好友匹配
 				phone = m.group(0);
 				new Thread(new Runnable() {
 					@Override

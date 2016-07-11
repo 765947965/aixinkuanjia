@@ -450,11 +450,11 @@ public class CursorTools {
 				// 检查今天是否同步过服务器数据
 				if (CheckUpadateTime
 						.CheckResult_4Ckeckupfriends_uptime(context)) {
-					// 更新本地爱信好友
+					// 更新本地国脉电信好友
 					UPFrends4.Updata(context);
 				}
 			}
-			// 读取本地记录的爱信好友
+			// 读取本地记录的国脉电信好友
 			ArrayList<Contact> altemp = Friend_data_Check
 					.GetAllFriends(context);
 			if (altemp == null) {
@@ -464,7 +464,7 @@ public class CursorTools {
 				}
 				return;
 			}
-			// 给爱信好友匹配拼音检索
+			// 给国脉电信好友匹配拼音检索
 			for (Contact ctt : altemp) {
 				PinyinRetrieval(ctt);
 			}

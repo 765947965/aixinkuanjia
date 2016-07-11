@@ -249,7 +249,7 @@ public class Regist4V2_CheckCode extends Activity implements OnListnerShearch,
 		protected String doInBackground(String... paramArrayOfParams) {
 			String reg_url = URLTools.GetHttpURL_4RegistGetCode_V2(
 					Regist4V2_CheckCode.this, reg_phonenum.trim());
-			// Log.i("爱信", reg_url);
+			// Log.i("国脉电信", reg_url);
 			String result = HttpUtils.result_url_get(reg_url,
 					"{'result':'-104'}");
 			return result;

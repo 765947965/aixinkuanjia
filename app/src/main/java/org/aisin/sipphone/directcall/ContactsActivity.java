@@ -51,7 +51,7 @@ public class ContactsActivity extends Activity implements OnListnerShearch,
 	private boolean contacts_tx = true;
 	private int listviewshowflag = 0, TXL = 0, HY = 1;// 当前显示的好友类型
 	private TextView maillist_txlbt;// 显示通讯录好友
-	private TextView maillist_hybt;// 显示爱信好友
+	private TextView maillist_hybt;// 显示国脉电信好友
 	private ImageView img_back;
 	private boolean show_back;
 	private AisinOutCallActivity outcallActivity;
@@ -103,7 +103,7 @@ public class ContactsActivity extends Activity implements OnListnerShearch,
 					mail_listactivity_tishi
 							.setText("读取联系人失败！请检查是否允许本软件访问联系人的权限！");
 					if (listviewshowflag == HY) {
-						mail_listactivity_tishi.setText("暂无爱信好友,点击添加按钮添加爱信好友!");
+						mail_listactivity_tishi.setText("暂无国脉电信好友,点击添加按钮添加国脉电信好友!");
 						mail_listactivity_list.setVisibility(View.INVISIBLE);
 						mail_listactivity_tishi.setVisibility(View.VISIBLE);
 					}
@@ -268,7 +268,7 @@ public class ContactsActivity extends Activity implements OnListnerShearch,
 				intent.setType("vnd.android.cursor.dir/raw_contact");
 				startActivity(intent);
 			} else {
-				// 添加爱信好友
+				// 添加国脉电信好友
 				Intent intent = new Intent(ContactsActivity.this,
 						org.aisin.sipphone.mai_list.AddAisinFriend.class);
 				startActivity(intent);

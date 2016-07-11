@@ -61,6 +61,7 @@ public class FirstActivity extends Activity {
 		ViewUtils.inject(this);
 
 		spf = SharedPreferencesTools.getSharedPreferences_4FIRSTY(this);
+		setts_fr4_relayout.setVisibility(View.GONE);
 		if (!Constants.showbaidumap) {
 			if (spf.getInt(SharedPreferencesTools.firstyhome, 1) == 6) {
 				spf.edit().putInt(SharedPreferencesTools.firstyhome, 1)

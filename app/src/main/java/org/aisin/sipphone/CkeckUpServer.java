@@ -59,9 +59,9 @@ public class CkeckUpServer extends Service {
 						CkeckUpServer.this.getResources(),
 						R.drawable.ic_launcher));
 				mBuilder.setSmallIcon(R.drawable.notificationimage);
-				mBuilder.setContentTitle("爱信新版本升级啦");
+				mBuilder.setContentTitle("国脉电信新版本升级啦");
 				mBuilder.setContentText(update_tips);
-				mBuilder.setTicker("发现爱信新版本\n" + update_tips);
+				mBuilder.setTicker("发现国脉电信新版本\n" + update_tips);
 				mBuilder.setOngoing(false);// true无法通过左右滑动清除
 				mBuilder.setAutoCancel(true);// 点击后消失
 				mBuilder.setContentIntent(pendingIntent);

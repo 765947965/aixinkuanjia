@@ -81,7 +81,7 @@ public class SelfPersonalData extends Activity {
 	private TextView spd_nametext;// 姓名
 	private TextView spd_qianmingtext;// 签名
 	private TextView sdp_phonenum;// 手机号
-	private TextView sdp_uidnum;// 爱信号
+	private TextView sdp_uidnum;// 国脉电信号
 	private TextView spd_sextext;// 性别
 	private TextView spd_bdatetext;// 生日
 

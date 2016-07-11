@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#50000000"
-    android:onClick="OnChangeclick" >
+    android:onClick="OnChangeclick">
 
     <LinearLayout
         android:id="@+id/showshere"
@@ -13,19 +13,19 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/writeaction"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp" >
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/fx_weixin"
@@ -41,7 +41,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="OnChangeclick"
-                    android:src="@drawable/share_weibo" />
+                    android:src="@drawable/share_weibo"
+                    android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/fx_qq"
@@ -55,7 +56,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
 
                 <TextView
                     android:layout_width="0dp"
@@ -71,7 +74,8 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:text="@string/sina_weibo"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:visibility="gone" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -86,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp" >
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/fx_weixinfriends"
@@ -117,7 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="10dp" >
+                android:paddingBottom="10dp">
 
                 <TextView
                     android:layout_width="0dp"

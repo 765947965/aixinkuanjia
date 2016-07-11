@@ -137,13 +137,13 @@ public class ShowRedUserTextView extends Activity implements OnClickListener {
 					+ "<h6>" + this.getString(R.string.aboutaisin_bzzx6_t)
 					+ "</h6><font color=#808080>"
 					+ this.getString(R.string.aboutaisin_bzzx6) + "</font>"
-					+ "<h6>" + this.getString(R.string.aboutaisin_bzzx7_t)
+					/*+ "<h6>" + this.getString(R.string.aboutaisin_bzzx7_t)
 					+ "</h6><font color=#808080>"
 					+ this.getString(R.string.aboutaisin_bzzx7_1) + "<br>"
 					+ this.getString(R.string.aboutaisin_bzzx7_2) + "<br>"
 					+ this.getString(R.string.aboutaisin_bzzx7_3) + "<br>"
 					+ this.getString(R.string.aboutaisin_bzzx7_4) + "<br>"
-					+ this.getString(R.string.aboutaisin_bzzx7_5) + "</font>");
+					+ this.getString(R.string.aboutaisin_bzzx7_5) + "</font>"*/);
 		} else if ("zfsm".equals(showkey)) {
 			setting_showtextview_text.setText("资费说明");
 			spnd = Html
@@ -188,7 +188,7 @@ public class ShowRedUserTextView extends Activity implements OnClickListener {
 					+ this.getString(R.string.aboutaisin_czsm1_t)
 					+ "</h6><font color=#808080>"
 					+ this.getString(R.string.aboutaisin_czsm1) + "</font>"
-					+ "<h6>" + this.getString(R.string.aboutaisin_czsm2_t)
+					/*+ "<h6>" + this.getString(R.string.aboutaisin_czsm2_t)
 					+ "</h6><font color=#808080>"
 					+ this.getString(R.string.aboutaisin_czsm2) + "</font>"
 					+ "<h6>" + this.getString(R.string.aboutaisin_czsm3_t)
@@ -199,7 +199,7 @@ public class ShowRedUserTextView extends Activity implements OnClickListener {
 					+ "</h6><font color=#808080>"
 					+ this.getString(R.string.aboutaisin_czsm4_1) + "<br>"
 					+ this.getString(R.string.aboutaisin_czsm4_2) + "<br>"
-					+ this.getString(R.string.aboutaisin_czsm4_3) + "</font>");
+					+ this.getString(R.string.aboutaisin_czsm4_3) + "</font>"*/);
 		}
 		if (spnd != null) {
 			showtextview_text.setText(spnd);

@@ -43,7 +43,7 @@ public class KeyBoardSoundPools {
 				soundids = null;
 			}
 			final long ll1 = System.currentTimeMillis();
-			Log.i("爱信", "ll1::" + ll1);
+			Log.i("国脉电信", "ll1::" + ll1);
 			AssetManager asmg = context.getAssets();
 			if (android.os.Build.VERSION.SDK_INT < 21) {
 				soundpool = new SoundPool(88, AudioManager.STREAM_MUSIC, 0);
@@ -65,8 +65,8 @@ public class KeyBoardSoundPools {
 					if (sampleId >= 88) {
 						MusicIsOk = true;
 						long ll2 = System.currentTimeMillis();
-						Log.i("爱信", "ll2::" + ll2);
-						Log.i("爱信", "LODINGOK::" + (ll2 - ll1));
+						Log.i("国脉电信", "ll2::" + ll2);
+						Log.i("国脉电信", "LODINGOK::" + (ll2 - ll1));
 					}
 				}
 			});

@@ -160,7 +160,7 @@ public class Shared_AddRedActivity extends Activity implements OnClickListener {
 		}
 		if (from != null && !"".equals(from.trim())) {
 			if ("system".equals(from.trim())) {
-				tv_sendfromname.setText("爱信");
+				tv_sendfromname.setText("国脉电信");
 			}
 		}
 		if (!name.isEmpty()) {

@@ -543,7 +543,7 @@ public class AisinOutCallActivity extends Activity implements OnClickListener {
 			audio.setMode(AudioManager.MODE_NORMAL);
 		LinphoneCore lc = AisinManager.getLc();
 		LinphoneCall currentCall = lc.getCurrentCall();
-		Log.i("爱信", "114");
+		Log.i("国脉电信", "114");
 		if (currentCall != null) {
 			lc.terminateCall(currentCall);
 		} else if (lc.isInConference()) {
@@ -551,7 +551,7 @@ public class AisinOutCallActivity extends Activity implements OnClickListener {
 		} else {
 			lc.terminateAllCalls();
 		}
-		Log.i("爱信", "115");
+		Log.i("国脉电信", "115");
 		if (show_dial)
 			dialKeyBack();
 		callFinish();

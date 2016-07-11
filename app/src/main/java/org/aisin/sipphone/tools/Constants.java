@@ -11,7 +11,7 @@ public class Constants {
 	public static final String KEYBACK_MR = "0000000002.png";// 默认键盘背景图片
 	public static final String KEYBACK_ZDY = "0000000000000.jpg";// 自定义键盘背景图片
 	public static boolean showbaidumap = false;// 是否开启百度地图附近门店
-	public static final String nearbyname = "爱信";// 附近门店搜索默认搜索词
+	public static final String nearbyname = "国脉电信";// 附近门店搜索默认搜索词
 	public static final String musicogg = "musicogg";// 存放按键音频的目录
 	public static final String musicp = "musicp";// 存放谱的目录
 	public static final int YcodeTime = 60;// 重发验证码等待时间

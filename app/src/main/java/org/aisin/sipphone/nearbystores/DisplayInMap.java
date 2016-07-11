@@ -104,7 +104,7 @@ public class DisplayInMap extends Activity {
 		mBaiduMap.setOnMarkerClickListener(new OnMarkerClickListener() {
 			@Override
 			public boolean onMarkerClick(Marker arg0) {
-				// Log.i("爱信", arg0.getTitle() + arg0.toString());
+				// Log.i("国脉电信", arg0.getTitle() + arg0.toString());
 				return false;
 			}
 		});

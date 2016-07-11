@@ -87,7 +87,7 @@ public class DetailsPageActivity extends Activity implements OnClickListener {
 				.getDoubleExtra("RoutePlanDemo.st_latitude", 0);
 		st_longitude = getIntent().getDoubleExtra("RoutePlanDemo.st_longitude",
 				0);
-		Log.i("爱信", st_latitude + ":" + st_longitude + ":" + latitude + ":"
+		Log.i("国脉电信", st_latitude + ":" + st_longitude + ":" + latitude + ":"
 				+ longitude);
 		details_name.setText(name);
 		detailts_address.setText("地址: " + address);

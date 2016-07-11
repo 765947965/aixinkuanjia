@@ -81,7 +81,7 @@ public class SetRecharge extends Activity implements OnClickListener {
 			startActivity(intent);
 			break;
 		case R.id.setts_recharge_as_relayout:
-			intent.putExtra("setting_mcr_back_text", "爱信卡充值");
+			intent.putExtra("setting_mcr_back_text", "国脉电信卡充值");
 			startActivity(intent);
 			break;
 		case R.id.setts_recharge_zfb_relayout:

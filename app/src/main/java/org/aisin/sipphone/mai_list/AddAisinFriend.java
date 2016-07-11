@@ -168,7 +168,7 @@ public class AddAisinFriend extends Activity implements OnClickListener,
 			searchtext.setText("");
 			break;
 		case R.id.seartchbt:
-			// 搜索爱信好友
+			// 搜索国脉电信好友
 			// 判断输入是否正确
 			if (Checkinput()) {
 				prd.show();
@@ -186,17 +186,17 @@ public class AddAisinFriend extends Activity implements OnClickListener,
 
 	private boolean Checkinput(String inputtext) {
 		if ("".equals(inputtext)) {
-			new AisinBuildDialog(mContext, "提示", "请输入正确的爱信号或者手机号码!");
+			new AisinBuildDialog(mContext, "提示", "请输入正确的国脉电信号或者手机号码!");
 			return false;
 		} else if (!Check_format.Check_num(inputtext)) {
 			new AisinBuildDialog(mContext, "提示",
-					"搜索的爱信号或者手机号码只能是数字!");
+					"搜索的国脉电信号或者手机号码只能是数字!");
 			return false;
 		} else if (inputtext.startsWith("1") && inputtext.length() != 11) {
 			new AisinBuildDialog(mContext, "提示", "请输入正确的手机号码!");
 			return false;
 		} else if (inputtext.length() < 6 || inputtext.length() > 20) {
-			new AisinBuildDialog(mContext, "提示", "请输入正确的爱信号!");
+			new AisinBuildDialog(mContext, "提示", "请输入正确的国脉电信号!");
 			return false;
 		}
 		return true;
@@ -226,7 +226,7 @@ public class AddAisinFriend extends Activity implements OnClickListener,
 
 		@Override
 		protected String doInBackground(String... params) {
-			// 获取查询是否爱信好友的URL
+			// 获取查询是否国脉电信好友的URL
 			String url = URLTools.GetHttpURL_4Friend(mContext,
 					params[0].trim());
 			String result = HttpUtils.result_url_get(url, "{'result':'-104'}");
@@ -332,7 +332,7 @@ public class AddAisinFriend extends Activity implements OnClickListener,
 				break;
 			case 13:
 				showflagone = false;
-				new AisinBuildDialog(mContext, "搜索结果", "未找到匹配的爱信用户!");
+				new AisinBuildDialog(mContext, "搜索结果", "未找到匹配的国脉电信用户!");
 				break;
 			default:
 				showflagone = false;

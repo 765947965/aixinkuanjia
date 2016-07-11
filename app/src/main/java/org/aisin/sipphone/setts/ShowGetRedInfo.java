@@ -104,7 +104,7 @@ public class ShowGetRedInfo extends Activity {
 			// 设置金额及使用详情
 			if ("logindaily".equals(type.trim())
 					|| type.trim().endsWith("_money")) {
-				// 爱信每日登录红包或者金钱红包
+				// 国脉电信每日登录红包或者金钱红包
 				double money_temp = Double.parseDouble(money.trim())
 						/ (double) 100;
 				moneytext.setText(money_temp + "");
@@ -160,7 +160,7 @@ public class ShowGetRedInfo extends Activity {
 		int id = v.getId();
 		switch (id) {
 		case R.id.showredrelayou_bt:// 开启分享页面
-			String invite_sns_message = "我正在使用爱信电话,我抢到了好友"
+			String invite_sns_message = "我正在使用国脉电信电话,我抢到了好友"
 					+ moneytext.getText().toString()
 					+ moneytext_dj.getText().toString() + name
 					+ "好玩极了!话费、流量不够用就赶紧来玩吧!";

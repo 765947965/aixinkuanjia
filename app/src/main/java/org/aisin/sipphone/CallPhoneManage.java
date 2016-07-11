@@ -195,8 +195,8 @@ public class CallPhoneManage {
 				AisinBuildDialog mybuild = new AisinBuildDialog(context);
 				mybuild.setTitle("网络不可用!");
 				mybuild.setMessage(Html
-						.fromHtml("<font color=#808080><small>爱信免流量回拨:只支持广东移动/联通用户、国内其它部分地区移动用户</small></font>"));
-				mybuild.setListViewItem(new String[] { "尝试爱信免流量回拨", "手机拨打" },
+						.fromHtml("<font color=#808080><small>国脉电信免流量回拨:只支持广东移动/联通用户、国内其它部分地区移动用户</small></font>"));
+				mybuild.setListViewItem(new String[] { "尝试国脉电信免流量回拨", "手机拨打" },
 						new onMyItemClickListener() {
 							private boolean answallflag;
 							private int answallswitch;

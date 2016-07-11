@@ -264,7 +264,7 @@ public class RedDetailsActivity_Send extends Activity implements
 			if ("logindaily".equals(robct.getType().trim())
 					|| robct.getType().trim().endsWith("_money")
 					|| robct.getType().trim().endsWith("_right")) {
-				// 爱信每日登录红包或者金钱红包
+				// 国脉电信每日登录红包或者金钱红包
 				double money_temp = Double.parseDouble(robct.getMoney())
 						/ (double) 100;
 				reddetails_from_money.setText(money_temp + "");
@@ -488,7 +488,7 @@ public class RedDetailsActivity_Send extends Activity implements
 							org.aisin.sipphone.setts.SetRedCodeBefore.class);
 					intent.putExtra("codetype", "personal");
 					intent.putExtra("title_text1", "个人红包已准备好");
-					intent.putExtra("title_text2", "要发非爱信好友红包请生成红包口令");
+					intent.putExtra("title_text2", "要发非国脉电信好友红包请生成红包口令");
 					intent.putExtra("sended_gift_id", robct.getGift_id());
 					RedDetailsActivity_Send.this.startActivity(intent);
 					RedDetailsActivity_Send.this.finish();

@@ -59,7 +59,7 @@ public class PersonalRedEnvelope extends Activity implements
 																		// 缓存数组集合
 
 	private ArrayList<Contact> contacts = new ArrayList<Contact>();// 展示列表集合
-	private TreeSet<Contact> contacts_not = new TreeSet<Contact>();// 非爱信好友集合
+	private TreeSet<Contact> contacts_not = new TreeSet<Contact>();// 非国脉电信好友集合
 	private TreeMap<String, Integer> szm_map = new TreeMap<String, Integer>();// 联系人首字母出现位置
 	private TreeSet<Contact> contacts_ss = new TreeSet<Contact>();// 搜索结果联系人结果集合
 	private String[] jss = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
@@ -81,8 +81,8 @@ public class PersonalRedEnvelope extends Activity implements
 				contacts.addAll(contacts_ss);
 				mHandler.sendEmptyMessage(4);
 			} else if (msg.what == 3) {
-				// 处理非爱信好友
-				contacts_not.clear();// 非爱信好友
+				// 处理非国脉电信好友
+				contacts_not.clear();// 非国脉电信好友
 				TreeMap<Long, Contact> ctat = new TreeMap<Long, Contact>();
 				if (CursorTools.cttmap != null) {
 					try {
@@ -103,7 +103,7 @@ public class PersonalRedEnvelope extends Activity implements
 						for (Contact cts : friendslist) {
 							if (ctt.getPhonesList().get(i)
 									.equals(cts.getFriendphone())) {
-								isfriend = true;// 如果有找到相同的则是爱信好友
+								isfriend = true;// 如果有找到相同的则是国脉电信好友
 							}
 						}
 						if (!isfriend) {

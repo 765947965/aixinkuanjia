@@ -68,7 +68,7 @@ public class Find_Fragment extends Fragment implements OnPageChangeListener,
 	private int width;
 	private LinearLayout linear_find_aisin;
 	private LinearLayout linearLayout;
-	private AisinImageView aisin_mall_relayout;// 爱信商城
+	private AisinImageView aisin_mall_relayout;// 国脉电信商城
 	private AisinImageView phone_recharge_relayout;// 手机充值
 	private AisinImageView express_query_relayout;// 快递查询
 	private AisinImageView attractions_tickets_relayout;// 景点门票
@@ -284,9 +284,9 @@ public class Find_Fragment extends Fragment implements OnPageChangeListener,
 		linear_find_aisin = (LinearLayout) view
 				.findViewById(R.id.linear_find_aisin);
 		find_ggtp.setOnPageChangeListener(this);
-		mHandler.sendEmptyMessage(2);// 开启广告
-
-		mHandler.sendEmptyMessage(6);
+//		mHandler.sendEmptyMessage(2);// 开启广告
+//
+//		mHandler.sendEmptyMessage(6);
 		return view;
 	}
 

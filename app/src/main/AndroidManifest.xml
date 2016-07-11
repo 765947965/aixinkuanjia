@@ -397,7 +397,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="tencent1103966458" />
+                <data android:scheme="tencent1105533526" />
             </intent-filter>
         </activity>
         <activity
@@ -418,13 +418,13 @@
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity
-            android:name="org.aisin.sipphone.wxapi.WXEntryActivity"
+            android:name="org.guomai.sipphone.wxapi.WXEntryActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoDisplay" >
         </activity>
         <activity
-            android:name="org.aisin.sipphone.wxapi.WXPayEntryActivity"
+            android:name="org.guomai.sipphone.wxapi.WXPayEntryActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoDisplay" >

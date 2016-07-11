@@ -85,7 +85,7 @@ public class SetInviteriends extends Activity implements OnClickListener {
 			tv_yaoqing_times.setText("邀请好友(每月最多可获得"
 					+ Integer.parseInt(invite_times_monthly.trim())
 					* Integer.parseInt(invite_gift_minites.trim()) + "分钟话费)");
-			tv_share_times.setText("分享爱信(每月最多可获得"
+			tv_share_times.setText("分享国脉电信(每月最多可获得"
 					+ Integer.parseInt(share_times_monthly.trim())
 					* Integer.parseInt(share_gift_minites.trim()) + "分钟话费)");
 		} catch (Exception e) {

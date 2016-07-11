@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F0EFF5"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#FFFFFF" >
+        android:background="#FFFFFF">
 
         <ImageView
             android:id="@+id/setts_recharge_bar_back"
@@ -32,8 +32,7 @@
             android:layout_width="fill_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="49.5dp"
-            android:background="#BDBEBD" >
-        </View>
+            android:background="#BDBEBD"></View>
     </FrameLayout>
 
     <LinearLayout
@@ -43,13 +42,13 @@
         android:layout_marginTop="15dp"
         android:background="#FFFFFF"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <RelativeLayout
             android:id="@+id/setts_recharge_as_relayout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:gravity="center_vertical" >
+            android:gravity="center_vertical">
 
             <ImageView
                 android:id="@+id/setts_recharge_as_image"
@@ -87,13 +86,14 @@
         android:layout_marginTop="15dp"
         android:background="#FFFFFF"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <RelativeLayout
             android:id="@+id/setts_recharge_yd_relayout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:gravity="center_vertical" >
+            android:gravity="center_vertical">
 
             <ImageView
                 android:id="@+id/setts_recharge_yd_image"
@@ -127,14 +127,13 @@
             android:layout_width="fill_parent"
             android:layout_height="0.5dp"
             android:layout_marginLeft="34dp"
-            android:background="#e8e8e8" >
-        </View>
+            android:background="#e8e8e8"></View>
 
         <RelativeLayout
             android:id="@+id/setts_recharge_lt_relayout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:gravity="center_vertical" >
+            android:gravity="center_vertical">
 
             <ImageView
                 android:id="@+id/setts_recharge_lt_image"
@@ -168,14 +167,13 @@
             android:layout_width="fill_parent"
             android:layout_height="0.5dp"
             android:layout_marginLeft="34dp"
-            android:background="#e8e8e8" >
-        </View>
+            android:background="#e8e8e8"></View>
 
         <RelativeLayout
             android:id="@+id/setts_recharge_dx_relayout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:gravity="center_vertical" >
+            android:gravity="center_vertical">
 
             <ImageView
                 android:id="@+id/setts_recharge_dx_image"
@@ -209,14 +207,13 @@
             android:layout_width="fill_parent"
             android:layout_height="0.5dp"
             android:layout_marginLeft="34dp"
-            android:background="#e8e8e8" >
-        </View>
+            android:background="#e8e8e8"></View>
 
         <RelativeLayout
             android:id="@+id/setts_recharge_zfb_relayout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:gravity="center_vertical" >
+            android:gravity="center_vertical">
 
             <ImageView
                 android:id="@+id/setts_recharge_zfb_image"
@@ -252,15 +249,14 @@
             android:layout_height="0.5dp"
             android:layout_marginLeft="34dp"
             android:background="#e8e8e8"
-            android:visibility="gone" >
-        </View>
+            android:visibility="gone"></View>
 
         <RelativeLayout
             android:id="@+id/setts_recharge_wxzf_relayout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center_vertical"
-            android:visibility="gone" >
+            android:visibility="gone">
 
             <ImageView
                 android:id="@+id/setts_recharge_wxzf_image"

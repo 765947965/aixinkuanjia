@@ -584,7 +584,7 @@ public class URLTools {
 		return reg_service_page.toString();
 	}
 
-	// 获取查询是否爱信好友的URL
+	// 获取查询是否国脉电信好友的URL
 	public static String GetHttpURL_4Friend(Context context, String checktext) {
 		String[] keys = { "uid", "account" };
 		String[] values = { UserInfo_db.getUserInfo(context).getUid(),

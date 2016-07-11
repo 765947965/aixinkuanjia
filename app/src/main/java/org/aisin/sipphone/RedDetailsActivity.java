@@ -225,7 +225,7 @@ public class RedDetailsActivity extends Activity implements
 		} else {
 			if (from != null && !"".equals(from.trim())) {
 				if ("system".equals(from.trim())) {
-					reddetails_from_nametext.setText("爱信的" + name);
+					reddetails_from_nametext.setText("国脉电信的" + name);
 				} else {
 					// 匹配通讯录或者UID
 					boolean tempf = true;
@@ -268,7 +268,7 @@ public class RedDetailsActivity extends Activity implements
 		// 设置金额及使用详情
 		if ("logindaily".equals(gift_type.trim())
 				|| gift_type.trim().endsWith("_money")) {
-			// 爱信每日登录红包或者金钱红包
+			// 国脉电信每日登录红包或者金钱红包
 			double money_temp = Double.parseDouble(award_money.trim())
 					/ (double) 100;
 			Double d = Double.parseDouble(fee_rate.trim());

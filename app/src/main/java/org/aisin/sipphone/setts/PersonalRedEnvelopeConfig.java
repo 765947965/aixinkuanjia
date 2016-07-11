@@ -403,7 +403,7 @@ public class PersonalRedEnvelopeConfig extends Activity implements
 						intent.putStringArrayListExtra("phones", uidorphones);
 						intent.putExtra("codetype", "personal");
 						intent.putExtra("title_text1", "个人红包已准备好");
-						intent.putExtra("title_text2", "要发非爱信好友红包请生成红包口令");
+						intent.putExtra("title_text2", "要发非国脉电信好友红包请生成红包口令");
 						intent.putExtra("sended_gift_id",
 								redobject.getGift_id());
 						PersonalRedEnvelopeConfig.this.startActivity(intent);

@@ -197,7 +197,7 @@ public class Detailed_information extends Activity implements OnClickListener {
 			}
 			if (freanduid != null && !"".equals(freanduid)
 					&& !"null".equals(freanduid)) {
-				freanduidtext.setText("爱信号: " + freanduid);
+				freanduidtext.setText("国脉电信号: " + freanduid);
 				freanduidtext.setVisibility(View.VISIBLE);
 			}
 			if (signature != null && !"".equals(signature)
@@ -224,7 +224,7 @@ public class Detailed_information extends Activity implements OnClickListener {
 					dinfo_editor.setVisibility(View.INVISIBLE);
 				}
 			}
-		} else {// 非爱信用户
+		} else {// 非国脉电信用户
 			Pattern p = Pattern.compile("1[3-578][0-9]{9}");
 			for (String str : phonelist) {
 				Matcher m = p.matcher(str);
@@ -327,7 +327,7 @@ public class Detailed_information extends Activity implements OnClickListener {
 			break;
 		case R.id.dinfo_editor:// 编辑联系人
 			if (showflag && !isMyfriend) {
-				// 添加爱信好友
+				// 添加国脉电信好友
 				new Thread(new Runnable() {
 					@Override
 					public void run() {

@@ -212,7 +212,7 @@ public class SharedActivity extends Activity implements IWeiboHandler.Response {
 	private void FX_QQ() {
 		if (mTencent == null)
 			mTencent = Tencent
-					.createInstance("1103966458", SharedActivity.this);
+					.createInstance("1105533526", SharedActivity.this);
 		Bundle bundle = new Bundle();
 		bundle.putString(QQShare.SHARE_TO_QQ_TITLE, invite_app);
 		bundle.putString(QQShare.SHARE_TO_QQ_TARGET_URL,
@@ -264,7 +264,7 @@ public class SharedActivity extends Activity implements IWeiboHandler.Response {
 	private void FX_Qzone() {
 		if (mTencent == null) {
 			mTencent = Tencent
-					.createInstance("1103966458", SharedActivity.this);
+					.createInstance("1105533526", SharedActivity.this);
 		}
 		Bundle params = new Bundle();
 		params.putInt(QzoneShare.SHARE_TO_QZONE_KEY_TYPE,
@@ -423,7 +423,7 @@ public class SharedActivity extends Activity implements IWeiboHandler.Response {
 				// 2. 当您注册的应用程序包名与签名不正确时；
 				// 3. 当您在平台上注册的包名和签名与您当前测试的应用的包名和签名不匹配时。
 				String code = values.getString("code");
-				Log.i("爱信", "code:" + code);
+				Log.i("国脉电信", "code:" + code);
 				SharedActivity.this.finish();
 			}
 		}

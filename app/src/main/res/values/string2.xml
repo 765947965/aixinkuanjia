@@ -95,7 +95,7 @@
 	
 	
 	<string name="addressbook_label">手机</string>
-	<string name="notification_title">爱信</string>
+	<string name="notification_title">国脉电信</string>
 	<string name="wait_dialog_text">Starting up</string>
 	<string name="notification_registered">Registered to %s </string> 
 	<string name="notification_register_failure">Fails to register to %s</string>
@@ -110,7 +110,7 @@
     <string name="whate_huibo">什么是回拨？</string>	
    <string name="what_zhibo">什么是直拨？</string>
    <string name="huibo">回拨需要接听拨打过来的来电后方可通话;如果您的手机接听收费(如国内外漫游),使用回拨时,运营商会收取接听电话的费用</string>
-    <string name="zhibo">直拨是指当您使用爱信打电话,爱信会通过网络传送您的语音给对方,因此会消耗流量,每分钟 通话时间大约会消耗430KB流量.建议您在手机网络下使用直拨时,注意您的流量使用情况！</string>
+    <string name="zhibo">直拨是指当您使用国脉电信打电话,国脉电信会通过网络传送您的语音给对方,因此会消耗流量,每分钟 通话时间大约会消耗430KB流量.建议您在手机网络下使用直拨时,注意您的流量使用情况！</string>
      <string name="key_board_back">返回</string>
      
      

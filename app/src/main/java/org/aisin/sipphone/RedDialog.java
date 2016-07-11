@@ -160,7 +160,7 @@ public class RedDialog extends Activity implements OnClickListener {
 		} else {
 			if (from != null && !"".equals(from.trim())) {
 				if ("system".equals(from.trim())) {
-					sendfromname_text.setText("爱信");
+					sendfromname_text.setText("国脉电信");
 				} else {
 					// 匹配通讯录或者UID
 					boolean tempf = true;

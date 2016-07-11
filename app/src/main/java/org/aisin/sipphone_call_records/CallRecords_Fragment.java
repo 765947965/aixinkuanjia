@@ -127,7 +127,7 @@ public class CallRecords_Fragment extends Fragment implements
 									}
 								}
 							}
-							// 如果匹配不到通讯录 则匹配爱信好友
+							// 如果匹配不到通讯录 则匹配国脉电信好友
 							if (ohi.getHeadbitmap() == null) {
 								Iterator<Contact> ctf = CursorTools.friendslist
 										.iterator();

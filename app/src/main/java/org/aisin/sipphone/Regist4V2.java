@@ -93,7 +93,7 @@ public class Regist4V2 extends Activity implements OnListnerShearch,
 			if (CheckInput()) {
 				AisinBuildDialog mybuild = new AisinBuildDialog(mContext);
 				mybuild.setTitle("提示");
-				mybuild.setMessage("爱信将验证码发送到+86"
+				mybuild.setMessage("国脉电信将验证码发送到+86"
 						+ rgv2_phnum.getText().toString());
 				mybuild.setOnDialogCancelListener("取消", null);
 				mybuild.setOnDialogConfirmListener("确定",
@@ -149,7 +149,7 @@ public class Regist4V2 extends Activity implements OnListnerShearch,
 		protected String doInBackground(String... paramArrayOfParams) {
 			String reg_url = URLTools.GetHttpURL_4RegistGetCode_V2(
 					mContext, rgv2_phnum.getText().toString().trim());
-			// Log.i("爱信", reg_url);
+			// Log.i("国脉电信", reg_url);
 			String result = HttpUtils.result_url_get(reg_url,
 					"{'result':'-104'}");
 			return result;

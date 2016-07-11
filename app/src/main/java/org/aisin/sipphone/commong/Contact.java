@@ -21,15 +21,15 @@ public class Contact implements Comparable<Contact>, Serializable {
 	private int avatarid;
 	private TreeSet<String> searchlist4name;
 	private ArrayList<String> phonesList;
-	private boolean showflag = false;// 展示以什么为主false标志以通讯录风格展示，true表示以爱信好友风格展示
-	private boolean isfreand = false;// 是否爱信用户
-	private Bitmap tx_fread;// 爱信头像
+	private boolean showflag = false;// 展示以什么为主false标志以通讯录风格展示，true表示以国脉电信好友风格展示
+	private boolean isfreand = false;// 是否国脉电信用户
+	private Bitmap tx_fread;// 国脉电信头像
 	private String ver;// 好友资料版本号
 	private String picture;// 好友头像URL
 	private String picmd5;// 好友头像md5值
 	private String signature;// 好友给自己设置的签名
 	private String friendname;// 好友给自己设置的姓名昵称
-	private String friendphone;// 爱信好友的手机号码
+	private String friendphone;// 国脉电信好友的手机号码
 	private String mobileNumber;// 好友绑定的手机号码
 	private String profession;// 好友的职业
 	private String company;// 好友的公司
@@ -37,10 +37,10 @@ public class Contact implements Comparable<Contact>, Serializable {
 	private String city;// 好友的城市
 	private String school;// 好友的学校城市
 	private String uid;// 好友的UID
-	private String sex;// 爱信好友性别
-	private String bthday;// 爱信好友生日
+	private String sex;// 国脉电信好友性别
+	private String bthday;// 国脉电信好友生日
 	private int tx_imagedownflag;// 是否需要更新好友自定义头像 // 0不需要更新头像，1需要更新头像
-	private boolean isMyfriend = true;// 是否是我的爱信好友
+	private boolean isMyfriend = true;// 是否是我的国脉电信好友
 
 	public boolean isMyfriend() {
 		return isMyfriend;

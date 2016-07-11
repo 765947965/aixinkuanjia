@@ -97,7 +97,7 @@ public class SetAboutaisin extends Activity implements OnClickListener {
 		setts_kfrx_relayout.setOnClickListener(this);
 		setts_xbbtx_relayout.setOnClickListener(this);
 		setts_jcxbb_relayout.setOnClickListener(this);
-		version_value.setText("爱信 "
+		version_value.setText("国脉电信 "
 				+ UserInfo_db.getUserInfo(SetAboutaisin.this).getV());
 		shared_msglist_date = SharedPreferencesTools
 				.getSharedPreferences_msglist_date_share(SetAboutaisin.this);
@@ -174,7 +174,7 @@ public class SetAboutaisin extends Activity implements OnClickListener {
 					.getString(
 							SharedPreferencesTools.SPF_msglist_date_service_phone,
 							"");
-			Toast.makeText(this, "爱信客服热线是 :" + service_phone, Toast.LENGTH_LONG)
+			Toast.makeText(this, "国脉电信客服热线是 :" + service_phone, Toast.LENGTH_LONG)
 					.show();
 
 			Intent callIntent = new Intent(Intent.ACTION_DIAL);

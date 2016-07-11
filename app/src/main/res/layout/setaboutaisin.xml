@@ -56,8 +56,8 @@
 
             <ImageView
                 android:id="@+id/qrcodeimage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/version_icon" />
 

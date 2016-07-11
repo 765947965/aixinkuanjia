@@ -81,12 +81,12 @@ public class MobileCardRecharge extends Activity implements OnClickListener,
 		if (title_name.equals("电信卡充值")) {
 			paytype = "38";
 		}
-		if (title_name.equals("爱信卡充值")) {
+		if (title_name.equals("国脉电信卡充值")) {
 			paytype = "98";
 			cardValue = "10";
 			mianellayout.setVisibility(View.GONE);
 			qrcodecom.setVisibility(View.VISIBLE);
-			chongzhitishi.setText("爱信卡是指官方网站发行的充值卡并且充值无赠送！");
+			chongzhitishi.setText("国脉电信卡是指官方网站发行的充值卡并且充值无赠送！");
 		}
 		prepaid_card_type.setText(Recharge_values[0]);
 		setting_mcr_back_text.setText(title_name);

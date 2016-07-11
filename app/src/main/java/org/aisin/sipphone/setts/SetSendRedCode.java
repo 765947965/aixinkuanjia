@@ -107,15 +107,15 @@ public class SetSendRedCode extends Activity {
 			message_sub = "";
 			if ("logindaily".equals(robct.getType().trim())
 					|| robct.getType().trim().endsWith("_money")) {
-				// 爱信每日登录红包或者金钱红包
+				// 国脉电信每日登录红包或者金钱红包
 				double money_temp = Double.parseDouble(robct.getMoney())
 						/ (double) 100;
 				message_sub = money_temp + "元话费";
-				title_text = "爱信-话费";
+				title_text = "国脉电信-话费";
 			} else if (robct.getType().trim().endsWith("_month")) {
 				// 赠送的天红包
 				message_sub = robct.getMoney() + "天免费通话";
-				title_text = "爱信-话费";
+				title_text = "国脉电信-话费";
 			} else if (robct.getType().trim().endsWith("_4gdata")) {
 				double money_temp = Double.parseDouble(robct.getMoney());
 				if (money_temp > 1024) {
@@ -123,16 +123,16 @@ public class SetSendRedCode extends Activity {
 				} else {
 					message_sub = money_temp + "KB流量";
 				}
-				title_text = "爱信-流量";
+				title_text = "国脉电信-流量";
 			} else if (robct.getType().trim().endsWith("_right")) {
 				double money_temp = (double) Integer.parseInt(robct.getMoney())
 						/ (double) 100;
 				message_sub = money_temp + "元特权";
-				title_text = "爱信-特权";
+				title_text = "国脉电信-特权";
 			}
 			invite_sns_message = "\"" + command + "\"红包口令,"
 					+ robct.getFromnickname() + "发了 " + message_sub
-					+ "红包,打开 \"爱信-我-红包\",输入口令,快来抢!";
+					+ "红包,打开 \"国脉电信-我-红包\",输入口令,快来抢!";
 		} else {
 			// 开启生成口令
 			new HttpTask_SetsendRedCode().execute("");
@@ -146,7 +146,7 @@ public class SetSendRedCode extends Activity {
 		Intent intent = new Intent(SetSendRedCode.this,
 				org.aisin.sipphone.setts.SharedActivity.class);
 		intent.putExtra("invite_sns_message", invite_sns_message);
-		intent.putExtra("invite_app", "爱信-红包");
+		intent.putExtra("invite_app", "国脉电信-红包");
 		intent.putExtra("bitmapid", R.drawable.redsharedimage);
 		intent.putExtra("iamgeurl", HttpUtils.redsharedImageurl);
 		intent.putExtra(
@@ -230,9 +230,9 @@ public class SetSendRedCode extends Activity {
 			}
 			intent.putExtra("shareflag", "penyouquan");
 			intent.putExtra("invite_app", title_text);
-			intent.putExtra("invite_sns_message", "\"" + command + "\"爱信码,"
+			intent.putExtra("invite_sns_message", "\"" + command + "\"国脉电信码,"
 					+ robct.getFromnickname() + "发了 " + message_sub
-					+ ",打开 \"爱信-我\",输入爱信码,快来抢!");
+					+ ",打开 \"国脉电信-我\",输入国脉电信码,快来抢!");
 			SetSendRedCode.this.startActivity(intent);
 			break;
 		case R.id.imagebt_qqkj:
@@ -340,7 +340,7 @@ public class SetSendRedCode extends Activity {
 				message_sub = "";
 				if ("logindaily".equals(robct.getType().trim())
 						|| robct.getType().trim().endsWith("_money")) {
-					// 爱信每日登录红包或者金钱红包
+					// 国脉电信每日登录红包或者金钱红包
 					double money_temp = Double.parseDouble(robct.getMoney())
 							/ (double) 100;
 					message_sub = money_temp + "元";
@@ -361,7 +361,7 @@ public class SetSendRedCode extends Activity {
 				}
 				invite_sns_message = "\"" + command + "\"红包口令,"
 						+ robct.getFromnickname() + "发了 " + message_sub
-						+ "红包,打开 \"爱信-我-红包\",输入口令,快来抢!";
+						+ "红包,打开 \"国脉电信-我-红包\",输入口令,快来抢!";
 				if (setmycode) {
 					setmycode = false;
 					new AisinBuildDialog(SetSendRedCode.this, "提示", "口令更改成功!");

@@ -295,7 +295,7 @@ public class TraditionalDialBackActivity extends Activity implements
 			super.onCallStateChanged(state, incomingNumber);
 			switch (state) {
 			case TelephonyManager.CALL_STATE_RINGING:// 电话呼入
-				Log.i("爱信", "RINGING");
+				Log.i("国脉电信", "RINGING");
 				if (answallflag) {
 					answallflag = false;
 				} else {
@@ -312,7 +312,7 @@ public class TraditionalDialBackActivity extends Activity implements
 				}
 				break;
 			case TelephonyManager.CALL_STATE_IDLE:// 电话挂断
-				Log.i("爱信", "IDLE");
+				Log.i("国脉电信", "IDLE");
 				// 关闭悬浮框
 				context.stopService(intent_s);
 				break;

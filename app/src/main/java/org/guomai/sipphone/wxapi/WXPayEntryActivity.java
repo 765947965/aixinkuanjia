@@ -1,7 +1,9 @@
-package org.aisin.sipphone.wxapi;
+package org.guomai.sipphone.wxapi;
 
-import org.aisin.sipphone.myview.AisinBuildDialog;
-import org.aisin.sipphone.myview.AisinBuildDialog.DialogBuildConfirmListener;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
 
 import com.tencent.mm.sdk.constants.ConstantsAPI;
 import com.tencent.mm.sdk.modelbase.BaseReq;
@@ -11,10 +13,8 @@ import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.weixin.paydemo.WXContacts;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
+import org.aisin.sipphone.myview.AisinBuildDialog;
+import org.aisin.sipphone.myview.AisinBuildDialog.DialogBuildConfirmListener;
 
 public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
 
@@ -43,7 +43,6 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
 
 	@Override
 	public void onResp(BaseResp resp) {
-		Log.d(TAG, resp.errStr + "onPayFinish, errCode = " + resp.errCode);
 
 		if (resp.getType() == ConstantsAPI.COMMAND_PAY_BY_WX) {
 			String message = "";

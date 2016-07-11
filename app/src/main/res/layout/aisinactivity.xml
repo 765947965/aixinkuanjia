@@ -3,7 +3,7 @@
     android:id="@+id/aisinactivity_relayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF" >
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:id="@+id/bar"
@@ -11,7 +11,7 @@
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:background="#FFFFFF"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/dial"
@@ -23,12 +23,12 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="4" >
+            android:layout_weight="4">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/mail_list"
@@ -49,7 +49,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true" />
+                    android:adjustViewBounds="true"
+                    android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/nearby_stores"
@@ -64,7 +65,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:visibility="gone" >
+                    android:visibility="gone">
 
                     <ImageView
                         android:id="@+id/setts"
@@ -92,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 android:orientation="horizontal"
-                android:visibility="invisible" >
+                android:visibility="invisible">
 
                 <ImageView
                     android:id="@+id/tab_call_bt"
@@ -116,19 +117,17 @@
         android:layout_width="fill_parent"
         android:layout_height="0.5dp"
         android:layout_above="@id/bar"
-        android:background="#BDBEBD" >
-    </View>
+        android:background="#BDBEBD"></View>
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_above="@id/aisin_lineview" >
+        android:layout_above="@id/aisin_lineview">
 
         <FrameLayout
             android:id="@+id/fragments"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
-        </FrameLayout>
+            android:layout_height="fill_parent"></FrameLayout>
 
         <RelativeLayout
             android:id="@+id/mysetts_2layout"
@@ -136,7 +135,7 @@
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:visibility="invisible" >
+            android:visibility="invisible">
 
             <ImageView
                 android:id="@+id/setts_2"

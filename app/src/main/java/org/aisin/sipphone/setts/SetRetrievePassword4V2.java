@@ -95,7 +95,7 @@ public class SetRetrievePassword4V2 extends Activity implements
 			AisinBuildDialog mybuild = new AisinBuildDialog(
 					SetRetrievePassword4V2.this);
 			mybuild.setTitle("提示");
-			mybuild.setMessage("爱信将验证码发送到+86"
+			mybuild.setMessage("国脉电信将验证码发送到+86"
 					+ setrpd4v2_phnum.getText().toString());
 			mybuild.setOnDialogCancelListener("取消", null);
 			mybuild.setOnDialogConfirmListener("确定",
