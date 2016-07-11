@@ -349,9 +349,9 @@ public class Dial_Fragment extends Fragment implements OnTouchListener,
 				} catch (Exception e) {
 				}
 			} else if (msg.what == 16) {
-				notnetlj.setVisibility(View.VISIBLE);
+				//notnetlj.setVisibility(View.VISIBLE);
 			} else if (msg.what == 17) {
-				notnetlj.setVisibility(View.GONE);
+				//notnetlj.setVisibility(View.GONE);
 			} else if (msg.what == 18) {
 				int scitem = msg.getData().getInt("scitem");
 				dial_ggtp.setCurrentItem(scitem, false);

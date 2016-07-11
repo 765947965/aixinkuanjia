@@ -541,7 +541,7 @@ public class Find_Fragment extends Fragment implements OnPageChangeListener,
 	}
 
 	public void ReSetViewPager() {// 重载ViewPager
-		mHandler.sendEmptyMessage(2);
+//		mHandler.sendEmptyMessage(2);
 	}
 
 	private AisinImageView getAisinImageView(Context context, int width,
@@ -568,7 +568,7 @@ public class Find_Fragment extends Fragment implements OnPageChangeListener,
 	}
 
 	public void upServerdata() {
-		mHandler.sendEmptyMessage(6);
+//		mHandler.sendEmptyMessage(6);
 	}
 
 	private View getPaddingViewVer(Context context) {

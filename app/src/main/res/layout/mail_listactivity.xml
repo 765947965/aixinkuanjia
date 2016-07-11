@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/maillisttitlebanck_axhy_dis"
                     android:padding="5dp"
-                    android:text="@string/myhaoyou"
+                    android:text="国脉好友"
                     android:textColor="#1160FD"
                     android:textSize="16sp" />
             </LinearLayout>
