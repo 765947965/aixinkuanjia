@@ -20,7 +20,7 @@ public class HttpUtils {
 	public static final String PAY = "http://pay.k7.hk:8060/recharge/service/pay.php";
 	public static final String LS = "http://user.k7.hk:8060/usercenter/mobile_chargelog.php";
 	public static final String HD = "http://user.k7.hk:8060/usercenter/mobile_callsearch.php";
-	public static final String MSG_URL = "http://msg.k7.hk:8899/config/msglist";
+	public static final String MSG_URL = "http://mobile.k7.hk:8899/config/msglist";
 	public static final String ACTIONREPORT = "http://mobile.k7.hk:8899/action_report";
 	public static final String CALL = "http://mobile.k7.hk:8899/call";
 	public static final String UPUSERDATAURL = "http://mobile.k7.hk:8899/user/uploadUserProfile";

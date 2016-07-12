@@ -89,8 +89,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="aixin"
-                    android:scheme="aisinredstart" />
+                    android:host="guomai"
+                    android:scheme="guomaiShare" />
             </intent-filter>
         </activity>
         <activity
