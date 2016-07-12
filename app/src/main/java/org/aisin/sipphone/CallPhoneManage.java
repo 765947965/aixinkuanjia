@@ -95,6 +95,7 @@ public class CallPhoneManage {
 				.getSharedPreferences_msglist_date_share(context).getString(
 						SharedPreferencesTools.SPF_msglist_date_ipcall_prefix,
 						"");
+		ipcall_prefix = "";
 		if (!"".equals(ipcall_prefix) && phonenum.startsWith(ipcall_prefix)) {
 			phonenum = phonenum.substring(ipcall_prefix.length());
 		}
