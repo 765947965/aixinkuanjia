@@ -54,7 +54,7 @@ public class HttpUtils {
 	public static final String get_gift_receive_info_v2 = "http://mobile.k7.hk:8899/gift/get_gift_receive_info_v2";
 
 	// 分享红包图标地址
-	public static final String redsharedImageurl = "http://img.k7.hk:8060/group1/M00/00/0B/d5OYZ1W2_J2AQ9q2AAAcD7bibuo522.png";
+	public static final String redsharedImageurl = "http://m.k7.hk:8060/download/image/Aisin.512x512.png";
 	// 国脉电信图标网络地址
 	public static final String aixinImageurl = "http://m.k7.hk:8060/download/image/Aisin.512x512.png";
 	public static final String ADVICE = "http://mobile.k7.hk:8899/config/advice";
