@@ -58,13 +58,13 @@ public class CallOutSet extends Activity implements OnClickListener,
 				.findViewById(R.id.layoutzhibowifi);
 		titlezhibo = (TextView) this.findViewById(R.id.titlezhibo);
 		textzhibo = (TextView) this.findViewById(R.id.textzhibo);
-		z96ipsm = (TextView) this.findViewById(R.id.z96ipsm);
+//		z96ipsm = (TextView) this.findViewById(R.id.z96ipsm);
 		setts_calloutset_back.setOnClickListener(this);
-		z96ipsm.setText(this.getString(R.string.aboutaisin_bzzx7_1) + "\n"
-				+ this.getString(R.string.aboutaisin_bzzx7_2) + "\n"
-				+ this.getString(R.string.aboutaisin_bzzx7_3) + "\n"
-				+ this.getString(R.string.aboutaisin_bzzx7_4) + "\n"
-				+ this.getString(R.string.aboutaisin_bzzx7_5));
+//		z96ipsm.setText(this.getString(R.string.aboutaisin_bzzx7_1) + "\n"
+//				+ this.getString(R.string.aboutaisin_bzzx7_2) + "\n"
+//				+ this.getString(R.string.aboutaisin_bzzx7_3) + "\n"
+//				+ this.getString(R.string.aboutaisin_bzzx7_4) + "\n"
+//				+ this.getString(R.string.aboutaisin_bzzx7_5));
 		sharepreferens = SharedPreferencesTools
 				.getSharedPreferences_ALLSWITCH(CallOutSet.this);
 		editor = sharepreferens.edit();

@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F0EFF5"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#FFFFFF" >
+        android:background="#FFFFFF">
 
         <ImageView
             android:id="@+id/setts_calloutset_back"
@@ -32,18 +32,17 @@
             android:layout_width="fill_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="49.5dp"
-            android:background="#BDBEBD" >
-        </View>
+            android:background="#BDBEBD"></View>
     </FrameLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
@@ -58,7 +57,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
                 android:background="#FFFFFF"
-                android:gravity="center" >
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -96,7 +95,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
                 android:background="#FFFFFF"
-                android:gravity="center" >
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -138,7 +137,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
                 android:background="#FFFFFF"
-                android:gravity="center" >
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -178,7 +177,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
                 android:background="#FFFFFF"
-                android:gravity="center" >
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -244,7 +243,8 @@
                 android:layout_marginTop="4dp"
                 android:text="@string/wt96iphb"
                 android:textColor="#000000"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/z96ipsm"

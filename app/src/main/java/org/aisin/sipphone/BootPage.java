@@ -58,7 +58,7 @@ public class BootPage extends Activity implements OnPageChangeListener {
 		viewpager = (ViewPager) this.findViewById(R.id.viewpager);
 		lineviewGroup = (LinearLayout) this.findViewById(R.id.lineviewGroup);
 		ids = new ArrayList<Integer>();
-		ids.add(R.drawable.bootpage1);
+//		ids.add(R.drawable.bootpage1);
 		ids.add(R.drawable.bootpage2);
 		ids.add(R.drawable.bootpage3);
 		ids.add(R.drawable.bootpage4);
