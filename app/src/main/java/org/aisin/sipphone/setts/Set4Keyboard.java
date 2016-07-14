@@ -95,7 +95,7 @@ public class Set4Keyboard extends Activity implements OnClickListener,
 					sxxtext.setText("发现");
 					break;
 				case 5:
-					sxxtext.setText("我");
+					sxxtext.setText("设置");
 					break;
 				case 6:
 					sxxtext.setText("附近门店");
