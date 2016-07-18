@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F0EFF5"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#FFFFFF" >
+        android:background="#FFFFFF">
 
         <!-- #12D9BF -->
 
@@ -25,18 +25,17 @@
             android:layout_width="fill_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="49.5dp"
-            android:background="#BDBEBD" >
-        </View>
+            android:background="#BDBEBD"></View>
     </FrameLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:id="@+id/setts_selfinfo_layout"
@@ -44,7 +43,7 @@
                 android:layout_height="85dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:background="#FFFFFF" >
+                android:background="#FFFFFF">
 
                 <ImageView
                     android:id="@+id/setts_selfinfo_image"
@@ -71,7 +70,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:layout_toRightOf="@id/setts_selfinfo_image"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/setts_selfinfo_username"
@@ -104,12 +103,53 @@
                 android:layout_marginTop="5dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/setts_hy_relayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/setts_hy_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/huiyuang" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/setts_hy_image"
+                        android:gravity="center_vertical|left"
+                        android:text="会员登陆"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/setting_biao" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="34dp"
+                    android:background="#e8e8e8"></View>
 
                 <RelativeLayout
                     android:id="@+id/setts_wallet_relayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" >
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/setts_wallet_image"
@@ -145,13 +185,12 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0.5dp"
                     android:layout_marginLeft="34dp"
-                    android:background="#e8e8e8" >
-                </View>
+                    android:background="#e8e8e8"></View>
 
                 <RelativeLayout
                     android:id="@+id/setts_recharge_relayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" >
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/setts_recharge_image"
@@ -187,13 +226,12 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0.5dp"
                     android:layout_marginLeft="34dp"
-                    android:background="#e8e8e8" >
-                </View>
+                    android:background="#e8e8e8"></View>
 
                 <RelativeLayout
                     android:id="@+id/setts_red_relayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" >
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/setts_red_image"
@@ -247,12 +285,12 @@
                 android:layout_marginTop="15dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:id="@+id/setts_account_relayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" >
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/setts_account_image"
@@ -288,13 +326,12 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0.5dp"
                     android:layout_marginLeft="34dp"
-                    android:background="#e8e8e8" >
-                </View>
+                    android:background="#e8e8e8"></View>
 
                 <RelativeLayout
                     android:id="@+id/setts_calloutset_relayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" >
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/setts_calloutset_image"
@@ -330,13 +367,12 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0.5dp"
                     android:layout_marginLeft="34dp"
-                    android:background="#e8e8e8" >
-                </View>
+                    android:background="#e8e8e8"></View>
 
                 <RelativeLayout
                     android:id="@+id/setts_Keyback_relayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" >
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/setts_Keyback_image"
@@ -376,12 +412,12 @@
                 android:layout_marginTop="15dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:id="@+id/setts_inviteriends_relayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" >
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/setts_inviteriends_image"
@@ -417,13 +453,12 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0.5dp"
                     android:layout_marginLeft="34dp"
-                    android:background="#e8e8e8" >
-                </View>
+                    android:background="#e8e8e8"></View>
 
                 <RelativeLayout
                     android:id="@+id/setts_Feedback_relayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" >
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/setts_Feedback_image"
@@ -463,12 +498,12 @@
                 android:layout_marginTop="15dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:id="@+id/setts_aboutaisin_relayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" >
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/setts_aboutaisin_image"

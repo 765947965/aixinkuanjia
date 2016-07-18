@@ -154,34 +154,16 @@ public class ShowRedUserTextView extends Activity implements OnClickListener {
 							+ "</font>"
 							+ "<h6>"
 							+ this.getString(R.string.aboutaisin_zfsm2_t)
-							+ "</h6><font color=#808080>"
-							+ this.getString(R.string.aboutaisin_zfsm2_1)
-							+ SharedPreferencesTools
-									.getSharedPreferences_msglist_date_share(
-											this)
-									.getString(
-											SharedPreferencesTools.SPF_msglist_date_FEERATE,
-											"")
-							+ this.getString(R.string.aboutaisin_zfsm2_2)
-							+ "</font>"
+							+ "</h6><font color=#808080>回拨方式呼叫每次大约消耗0.1KB流量（相当于用微信发送几个文字的流量），通话过程中不会产生任何的流量；</font>"
 							+ "<h6>"
 							+ this.getString(R.string.aboutaisin_zfsm3_t)
-							+ "</h6><font color=#808080>"
-							+ this.getString(R.string.aboutaisin_zfsm3)
-							+ SharedPreferencesTools
-									.getSharedPreferences_msglist_date_share(
-											this)
-									.getString(
-											SharedPreferencesTools.SPF_msglist_date_direct_fee_rate,
-											"") + "元/分钟" + "</font>" + "<h6>"
+							+ "</h6><font color=#808080>发起直拨呼叫需要流量，为了保证通话质量，请在网络信号良好的环境下使用，推荐使用免费WIFI网络拨打；</font>" + "<h6>"
 							+ this.getString(R.string.aboutaisin_zfsm4_t)
 							+ "</h6><font color=#808080>"
 							+ this.getString(R.string.aboutaisin_zfsm4)
 							+ "</font>" + "<h6>"
 							+ this.getString(R.string.aboutaisin_zfsm5_t)
-							+ "</h6><font color=#808080>"
-							+ this.getString(R.string.aboutaisin_zfsm5)
-							+ "</font>");
+							+ "</h6><font color=#808080>后期我们会开放流量充值服务，敬请关注！</font>");
 		} else if ("czsm".equals(showkey)) {
 			setting_showtextview_text.setText("充值说明");
 			spnd = Html.fromHtml("<h6>"

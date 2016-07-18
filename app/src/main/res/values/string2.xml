@@ -109,8 +109,8 @@
    <string name="network_wifi">WIFI直拨开关</string>
     <string name="whate_huibo">什么是回拨？</string>	
    <string name="what_zhibo">什么是直拨？</string>
-   <string name="huibo">回拨需要接听拨打过来的来电后方可通话;如果您的手机接听收费(如国内外漫游),使用回拨时,运营商会收取接听电话的费用</string>
-    <string name="zhibo">直拨是指当您使用国脉电信打电话,国脉电信会通过网络传送您的语音给对方,因此会消耗流量,每分钟 通话时间大约会消耗430KB流量.建议您在手机网络下使用直拨时,注意您的流量使用情况！</string>
+   <string name="huibo">回拨需要接听拨打过来的电话后方可与被叫方通话，所以需要您的电话在接听免费的套餐和地域环境下使用；</string>
+    <string name="zhibo">直拨是指您使用国脉电信打电话，您的手机会通过网络传送语音给接入机房，再由机房通过语音电路传送语音到被叫方的电话上，所以您的手机在语音传送过程中会消耗大约430KB/分钟的流量，所以建议您尽量在免费WIFI环境下使用费用电话。</string>
      <string name="key_board_back">返回</string>
      
      
